@@ -1,6 +1,7 @@
+import os
 from groq import Groq
 
-key = "REMOVED_API_KEY"
+key = os.environ.get("GROQ_API_KEY", "")
 try:
     client = Groq(api_key=key)
     resp = client.chat.completions.create(
