@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Automated Interview Evaluation Framework
 
 This is an AI-powered technical interview evaluation framework featuring:
@@ -97,3 +98,7 @@ A designated, highly-scalable microservice built purely for Natural Language Pro
   - `question_generator.py`: Tailors LLM prompt strategies based on skill metadata.
   - `feedback_generator.py`: Calculates mathematical semantic context scoring via `sentence-transformers` and aggregates qualitative Gemini feedback.
 - `requirements.txt`: Lightweight isolated `pip` references required for local ML operations.
+=======
+# Ai-based-interview-evaluation-framework-using-Large-Language-Models
+AI-powered interview evaluation framework using Large Language Models (LLMs) for automated technical interviews, candidate assessment, and personalized feedback.
+>>>>>>> 1c8a3f941fd835773a49646d2584349aa332fc63
