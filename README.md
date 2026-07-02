@@ -5,7 +5,7 @@ This is an AI-powered technical interview evaluation framework featuring:
 - A lifelike SVG 2D avatar that speaks directly to you using your browser's TTS.
 - Real-time voice interaction using the Web Speech API (with an audio recording fallback).
 - A Spring Boot (Java 17) backend orchestrator with JWT security and temporary SQLite file-based storage.
-- A Python FastAPI AI microservice that leverages the Google Gemini API to parse resumes, generate customized interview questions based on skills, and evaluate responses with semantic similarity (Sentence-Transformers) and Gemini (RAG-grounded).
+- A Python FastAPI AI that leverages the Google Gemini API to parse resumes, generate customized interview questions based on skills, and evaluate responses with semantic similarity (Sentence-Transformers) and Gemini (RAG-grounded).
 - A beautiful dark-themed React (TypeScript) frontend.
 
 ## Prerequisites
