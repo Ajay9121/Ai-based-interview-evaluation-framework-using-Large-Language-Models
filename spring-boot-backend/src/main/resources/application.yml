@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: interview-backend
+
+  datasource:
+    url: jdbc:sqlite:${SQLITE_DB_PATH:../data/interview.db}
+    driver-class-name: org.sqlite.JDBC
+    username:
+    password:
+
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+        format_sql: true
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    validate-on-migrate: false
+    out-of-order: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 15MB
+
+server:
+  port: 8081
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:mySecretKeyForInterviewAppMustBeAtLeast256BitsLongForHS256Algorithm}
+    expiration: 86400000   # 24 hours in ms
+
+  python-ai:
+    base-url: ${PYTHON_AI_URL:http://localhost:8000}
+
+  upload:
+    dir: ${UPLOAD_DIR:C:/Users/aj/Desktop/interview/automated-interview/uploads}
+
+logging:
+  level:
+    com.example.interview: DEBUG
+    org.springframework.security: INFO
+    org.flywaydb: INFO

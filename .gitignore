@@ -1,0 +1,29 @@
+# Build and IDE
+target/
+build/
+node_modules/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# Data and Artifacts
+data/
+uploads/
+interview.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Audio files
+*.webm
+*.wav
+*.mp3
